@@ -12,33 +12,17 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  server: 172.64.152.241
-  port: 2053
-  udp: true
-  type: vless
-  uuid: f959a3fc-2e55-4bde-8ed4-4fab249f8733
-  tls: true
-  servername: loshome02.cn9.eu
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /loshomecn9eu
-    headers:
-      Host: loshome02.cn9.eu
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
 rules:
 - MATCH,PROXIES

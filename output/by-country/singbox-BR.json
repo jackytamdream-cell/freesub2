@@ -12,39 +12,18 @@
       "security": "auto"
     },
     {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 02 - xiaohe",
-      "server": "172.64.152.241",
-      "server_port": 2053,
-      "uuid": "f959a3fc-2e55-4bde-8ed4-4fab249f8733",
-      "tls": {
-        "enabled": true,
-        "server_name": "loshome02.cn9.eu",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/loshomecn9eu",
-        "headers": {
-          "Host": "loshome02.cn9.eu"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
