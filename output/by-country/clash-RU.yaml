@@ -5,21 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 172.67.203.158
-  port: 443
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: vless
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
-  tls: true
-  servername: 12YGbaE0K3gN0z0f.mEhrsHADHaDdadI8.WorkerS.DEv
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR
-    headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 139.28.168.201
   port: 443
   udp: true
@@ -32,37 +32,6 @@ proxies:
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 104.21.8.176
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
-  tls: true
-  servername: ez-1bc8ab.sekiro-c18.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: ez-1bc8ab.sekiro-c18.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 138.124.254.232
-  port: 443
-  udp: true
-  type: hysteria2
-  password: fba73f98-777a-42a6-83c0-7d1f6f070e8d
-  sni: crt.dodopanel.biz
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,8 +40,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,7 +48,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
