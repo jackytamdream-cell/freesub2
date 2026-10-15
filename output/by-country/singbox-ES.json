@@ -78,6 +78,25 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+      "server": "185.114.72.31",
+      "server_port": 2053,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -85,7 +104,8 @@
         "🇪🇸 西班牙 (Spain) 01 - xiaohe",
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 04 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 04 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
       ]
     },
     {
@@ -95,7 +115,8 @@
         "🇪🇸 西班牙 (Spain) 01 - xiaohe",
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 04 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 04 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
