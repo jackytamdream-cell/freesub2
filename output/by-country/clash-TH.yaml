@@ -29,7 +29,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: th001.zestapp778.com
+  server: 38.60.254.50
   port: 22222
   udp: true
   type: vless
