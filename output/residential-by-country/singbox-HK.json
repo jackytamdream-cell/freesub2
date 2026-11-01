@@ -5,26 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇰 丹麦 (Denmark) 01 - xiaohe",
-      "server": "193.233.253.180",
-      "server_port": 8444,
-      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+      "server": "a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "6d56436c-150d-11f0-b0c8-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "github.com",
+        "server_name": "download.windowsupdate.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
           "short_id": ""
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
       }
     },
     {
@@ -32,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
