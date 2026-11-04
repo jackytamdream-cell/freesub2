@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.91.49
+  server: www.windowssearchtools.com
   port: 443
   udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  type: vmess
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: vpn.cintaku.qzz.io
+  servername: www.windowssearchtools.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
+    path: /truth
 proxy-groups:
 - name: PROXIES
   type: select
