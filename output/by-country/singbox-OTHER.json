@@ -5,17 +5,14 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "172.64.155.209",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.18.10.66",
       "server_port": 443,
-      "uuid": "64726966-0000-4000-8000-740000000000",
+      "uuid": "2874e26b-45e3-4d12-9e01-3f5a1c6a7105",
       "tls": {
         "enabled": true,
-        "server_name": "parsa-panel-dy55x.railway1385-2a46.workers.dev",
+        "server_name": "dietary-forms-begun-orientation.trycloudflare.com",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/drift",
+        "path": "/d9fb7b4f14c1",
         "headers": {
-          "Host": "parsa-panel-dy55x.railway1385-2a46.workers.dev"
+          "Host": "dietary-forms-begun-orientation.trycloudflare.com"
         }
       }
     },
@@ -34,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
